@@ -1,0 +1,97 @@
+@charset 'UTF-8';
+
+html {
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+    background-color: #E11364;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+header.Header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem 14rem 2rem 14rem;
+    background-color: #BC105C;
+    border-right: 5px solid white;
+    border-left: 5px solid white;
+}
+
+header.Header h1 {
+    font-size: 3.5rem;
+    color: white;
+}
+
+main.Main {
+    display: flex;
+    margin: 2rem 14rem 2rem 14rem;
+    padding-left: 1rem;
+    background-color: #BC105C;
+    border-radius: 0.5%;
+}
+
+main.Main section.mas-vendidos h2 {
+    font-size: 2.5rem;
+    margin: 2rem 0 2rem 3rem;
+    color: white;
+}
+
+main.Main article.mv-1, 
+article.mv-2 {
+    background-color: white;
+    margin: 2rem 3rem;
+    padding: 1rem;
+    border-radius: 1%;
+}
+
+main.Main section.mas-vendidos h6 {
+    font-size: 1.5rem;
+    color: #9E1A4F;
+    text-align: right;
+}
+
+main.Main section.mas-vendidos img.img-dest {
+    width: 100%;
+    height: 600px;
+    margin: 1.5rem 0 1.5rem 0;
+}
+
+main.Main section.mas-vendidos p {
+    display: inline-block;
+    margin-bottom: 1rem;
+    font-size: 0.8rem;
+}
+
+main.Main section.mas-vendidos a {
+    display: inline-flex;
+
+    color: white;
+    font-size: 1.3rem;
+    font-weight: 600;
+    background-color: #2C8F20;
+
+    margin-left: 55vh;
+    margin-bottom: 0rem;
+    padding: 0.7rem;
+    border-radius: 10%;
+}
+
+footer.Footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem 14rem 2rem 14rem;
+    background-color: #E96093;
+    border-radius: 2%;
+}
+
+footer.Footer h1 {
+    color: white;
+    font-size: 1rem;
+}
+

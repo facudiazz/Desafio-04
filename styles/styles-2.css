@@ -1,0 +1,184 @@
+@charset 'UTF-8';
+
+html {
+  font-size: 18px;
+  font-family: Arial, Helvetica, sans-serif;
+
+  line-height: 1.5;
+
+  background-color: black;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-weight: 600;
+
+  background-color: rgba(54, 51, 51, 0.685);
+  height: 7rem;
+}
+
+header h1 {
+  text-transform: uppercase;
+  font-size: 3.5rem;
+  cursor: pointer;
+  transition: 0.1s linear;
+  color: transparent;
+  -webkit-text-stroke: 2px #ff1867;
+  background-image: linear-gradient(
+    to left,
+    #ff1867,
+    #ff1867,
+    black,
+    rgb(35, 31, 31)
+  );
+  background-size: 200%;
+  -webkit-background-clip: text;
+  animation: move 20s linear infinite;
+}
+
+@keyframes move {
+  100% {
+    background-position: 2000px 0;
+  }
+}
+
+header h1:hover {
+  color: #ff1867;
+  text-shadow: 0 0 10px #ff1867, 0 0 20px #ff1867, 0 0 40px #ff1867,
+    0 0 80px #ff1867, 0 0 160px #ff1867, 0 0 320px #ff1867;
+}
+
+main.Main {
+  display: flex;
+  margin: 2rem 14rem 2rem 14rem;
+  padding-left: 1rem;
+  border-radius: 0.5%;
+}
+
+main.Main section.mas-vendidos img.img-dest {
+  display: flex;
+  margin-left: 14.5rem;
+  margin-top: 1rem;
+  width: 60%;
+  height: 400px;
+}
+
+main.Main section.mas-vendidos h6 {
+  text-align: center;
+  font-size: 2rem;
+  color: #ff1867;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+main.Main section.mas-vendidos p {
+  color: white;
+  text-align: center;
+
+  margin-top: 2rem;
+}
+
+a {
+  display: inline-block;
+  position: relative;
+
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1rem;
+  letter-spacing: 0.1rem;
+  font-weight: 400;
+  color: #ffff;
+
+
+  background: black;
+  border: 2px solid #ff1867;
+
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  margin-left: 32vw;
+  padding: 10px 30px;
+
+  transition: 0.5s;
+}
+
+a:hover {
+  background: var(--clr);
+  letter-spacing: 0.5rem;
+  box-shadow: 0 0 35px var(--clr);
+}
+
+a:before {
+  content: "";
+  position: absolute;
+  inset: 2px;
+  background: black;
+}
+
+a span {
+  position: relative;
+  z-index: 1;
+}
+
+a i {
+  position: absolute;
+  inset: 0;
+  display: block;
+}
+
+a i::before {
+  content: "";
+  position: absolute;
+
+  top: 0;
+  left: 80%;
+
+  width: 10px;
+  height: 4px;
+
+  background: black;
+
+  transform: translateX(-50%) skewX(325deg);
+  transition: 0.5s;
+}
+
+a:hover i::before {
+  width: 20px;
+  left: 20%;
+}
+
+a i::after {
+  content: "";
+  position: absolute;
+
+  bottom: 0;
+  left: 20%;
+
+  width: 10px;
+  height: 4px;
+
+  background: black;
+
+  transform: translateX(-50%) skewX(325deg);
+  transition: 0.5s;
+}
+
+a:hover i::after {
+  width: 20px;
+  left: 80%;
+}
+
+footer.Footer {
+    display: flex;
+    background-color: rgba(54, 51, 51, 0.685);
+    justify-content: center;
+    align-items: center;
+    border-radius: 2%;
+}
+
+footer.Footer h1 {
+    color: white;
+    font-size: 1rem;
+}
