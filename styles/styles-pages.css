@@ -109,7 +109,7 @@ aside.Aside article.payment main {
     margin-bottom: 2rem;
 }
 
-aside.Aside article.payment footer h6 {
+aside.Aside article.payment footer a {
     display: inline-block;
     margin-left: 30.6rem;
 
